@@ -1,0 +1,1 @@
+maddr = 'Адреса отделов МФЦ Красноярского края можно посмотреть по адресу:\n\nhttps://24mfc.ru/about/tsentry-moi-dokumenty/filials.php'
