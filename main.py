@@ -32,10 +32,8 @@ def main():
     logger.info(" ЗАПУСК БОТА")
     logger.info("=" * 60)
 
-    # Инициализация бота
     bot = aiomax.Bot('_TOKEN_')
 
-    # Добавляем роутер
     bot.add_router(router)
 
     # Запускаем планировщик отчетов в отдельном потоке
@@ -56,7 +54,6 @@ def main():
     else:
         logger.info(f" Отчет за вчерашний день уже существует")
 
-    # Показываем текущую статистику
     today_stats = stats.get_today_stats()
     logger.info(f" Текущая статистика за сегодня: {today_stats['daily']} пользователей")
     logger.info(f" Статистика за месяц: {today_stats['monthly']} пользователей")
@@ -65,7 +62,6 @@ def main():
     logger.info(" Бот готов к работе!")
     logger.info("=" * 60)
 
-    # Запускаем бота
     bot.run()
 
 
